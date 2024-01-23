@@ -67,7 +67,7 @@ DIRT +=		$(PACKAGE)-*.tar.gz
 DIRT +=		$(PACKAGE)-*.tar.gz.sig
 DIRT +=		$(PACKAGE)-*.tar.bz2
 
-BIN_IN :=	quilt guards
+BIN_IN :=	quilt guards testing.sh
 BIN_SRC :=	$(BIN_IN:%=%.in)
 BIN :=		$(BIN_IN)
 SRC +=		$(BIN_SRC:%=bin/%) bin/patch-wrapper.in

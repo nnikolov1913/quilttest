@@ -11,3 +11,4 @@ push_timeskew
 manpage-typo.patch
 fix-failing-tests
 fix-faildiff-test.patch
+nikolaytest.patch

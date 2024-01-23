@@ -1,0 +1,3 @@
+#! @BASH@
+
+echo "this is a test from Nikolay Nikolov" >&2
