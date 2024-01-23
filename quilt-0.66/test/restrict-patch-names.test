@@ -1,0 +1,56 @@
+$ mkdir patches
+
+$ quilt new "name with spaces"
+> Patch name 'name with spaces' invalid: cannot contain spaces.
+$ echo %{?}
+> 1
+
+$ quilt new series
+> No patch can be named 'series' as this would conflict with the
+> series file used internally by quilt.
+$ echo %{?}
+> 1
+
+
+
+$ echo "+toto" > patchfile
+
+$ quilt import -P 'name2 with spaces' patchfile
+> Patch name 'name2 with spaces' invalid: cannot contain spaces.
+$ echo %{?}
+> 1
+
+$ quilt import -P series patchfile
+> No patch can be named 'series' as this would conflict with the
+> series file used internally by quilt.
+$ echo %{?}
+> 1
+
+
+
+$ quilt new patch1
+> Patch patches/patch1 is now on top
+
+$ quilt fork "patch 1"
+> Patch name 'patch 1' invalid: cannot contain spaces.
+$ echo %{?}
+> 1
+
+$ quilt fork series
+> No patch can be named 'series' as this would conflict with the
+> series file used internally by quilt.
+$ echo %{?}
+> 1
+
+
+
+$ quilt rename "patch 1"
+> Patch name 'patch 1' invalid: cannot contain spaces.
+$ echo %{?}
+> 1
+
+$ quilt rename series
+> No patch can be named 'series' as this would conflict with the
+> series file used internally by quilt.
+$ echo %{?}
+> 1

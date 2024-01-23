@@ -1,0 +1,13 @@
+quilt-init
+dep3mail
+check_SERIES_exists
+setup-dont-read-pc
+restrict-patch-names
+fail_on_missing
+shell-subcommand
+use-sensible-editor
+dep3_headers
+push_timeskew
+manpage-typo.patch
+fix-failing-tests
+fix-faildiff-test.patch
