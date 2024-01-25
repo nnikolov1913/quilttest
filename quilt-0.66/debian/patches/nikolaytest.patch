@@ -1,8 +1,8 @@
-Description: Added testing.sh and quilt.postinst script
+Description: Added testing.sh
 
  quilt (0.66-2.1-nikolay3) jammy; urgency=low
  .
-   * Nikolay test changes improved
+   * Nikolay test changes improved and fixed
 Author: dobrev <dobrev666@gmail.com>
 
 ---
